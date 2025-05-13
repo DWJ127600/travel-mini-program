@@ -1,0 +1,75 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			// uni-ui 规则如下配置
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue",
+			"^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+		}
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "旅游小程序"
+			}
+		},
+		{
+			"path": "pages/like/index",
+			"style": {
+				"navigationBarTitleText": "喜欢"
+			}
+		},
+		{
+			"path": "pages/personal/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/detail/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/location/index",
+			"style": {
+				"navigationBarTitleText": "location"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#2867CE",
+		"borderStyle": "black",
+		"backgroundColor": "#fff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/ly-home01.png",
+				"selectedIconPath": "static/tabbar/ly-home.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/like/index",
+				"iconPath": "static/tabbar/ly-link01.png",
+				"selectedIconPath": "static/tabbar/ly-link.png",
+				"text": "喜欢"
+			},
+			{
+				"pagePath": "pages/personal/index",
+				"iconPath": "static/tabbar/ly-my01.png",
+				"selectedIconPath": "static/tabbar/ly-my.png",
+				"text": "我的"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
